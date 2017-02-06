@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/message_dialog_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/result_bg"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/message_dialog_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="你好"
+            android:textSize="56sp"
+            />
+
+            <Button
+                android:id="@+id/message_dialog_confirm_btn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="37sp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/message_dialog_content_tv"
+                android:layout_marginTop="40dp"
+                />
+
+            <Button
+                android:id="@+id/message_dialog_cancel_btn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="37sp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/message_dialog_content_tv"
+                android:layout_toRightOf="@id/message_dialog_confirm_btn"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                />
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_x"
+        android:layout_alignRight="@id/message_dialog_relative"
+        />
+
+
+</RelativeLayout>
